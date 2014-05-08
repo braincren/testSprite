@@ -41,7 +41,7 @@ bool KillingLight::ccTouchBegan(CCTouch* touch, CCEvent* event)
     }
     else
     {
-        CCLog("没点中了!! x:%d y:%d", (int)sLocalPos.x, (int)sLocalPos.y);
+  //      CCLog("没点中了!! x:%d y:%d", (int)sLocalPos.x, (int)sLocalPos.y);
         return false;
     }
 	

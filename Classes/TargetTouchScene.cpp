@@ -8,6 +8,7 @@
 #include "TargetTouchScene.h"
 #include "SimpleAudioEngine.h"
 #include "KillingLight.h"
+#include "Ball.h"
 
 using namespace cocos2d;
 using namespace CocosDenshion;
@@ -80,6 +81,30 @@ bool TargetTouchScene::init()
 	
 	sprite->runAction(repeat);
 	
+	//////////////////////////////
+    // 3. add ball item
+	
+	int ballIndex=0;
+	for(int i=0;i<BALL_COUNT;i++)
+	{
+		if(getBallStateByIndex(i))
+		{
+			Ball* ball = Ball::create("ababall.png");
+			ball->m_index=i;
+			this->addChild(ball, 1);
+			ball->setPosition(getBallPositionByIndex(i));
+			g_arrayBall[ballIndex++]=ball;
+		}
+	}
+
+ /*
+	Ball* ball = Ball::create("ababall.png");
+    this->addChild(ball, 1);
+
+	CCPoint vPosition = CCDirector::sharedDirector()->getVisibleOrigin();
+	CCSize vSize = CCDirector::sharedDirector()->getVisibleSize();
+	ball->setPosition(ccp((vSize.width-vPosition.x)/2, (vSize.height-vPosition.y)/2));	
+*/
 	return true;
 }
 
