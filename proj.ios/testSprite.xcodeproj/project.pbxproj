@@ -10,6 +10,8 @@
 		12B1E60018A2A499000C3FAF /* KillingLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12B1E5FC18A2A499000C3FAF /* KillingLight.cpp */; };
 		12B1E60118A2A499000C3FAF /* TargetTouchScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12B1E5FE18A2A499000C3FAF /* TargetTouchScene.cpp */; };
 		12B1E60318A2A4A2000C3FAF /* killer.png in Resources */ = {isa = PBXBuildFile; fileRef = 12B1E60218A2A4A2000C3FAF /* killer.png */; };
+		12E4872E191BDF600094640A /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12E4872C191BDF600094640A /* Ball.cpp */; };
+		12E48730191BDF790094640A /* ababall.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E4872F191BDF790094640A /* ababall.png */; };
 		15A3D8FF1682F7D5002FB0C5 /* b2BroadPhase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A3D88B1682F7D5002FB0C5 /* b2BroadPhase.cpp */; };
 		15A3D9001682F7D5002FB0C5 /* b2CollideCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A3D88D1682F7D5002FB0C5 /* b2CollideCircle.cpp */; };
 		15A3D9011682F7D5002FB0C5 /* b2CollideEdge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15A3D88E1682F7D5002FB0C5 /* b2CollideEdge.cpp */; };
@@ -268,6 +270,9 @@
 		12B1E5FE18A2A499000C3FAF /* TargetTouchScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TargetTouchScene.cpp; path = ../Classes/TargetTouchScene.cpp; sourceTree = "<group>"; };
 		12B1E5FF18A2A499000C3FAF /* TargetTouchScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TargetTouchScene.h; path = ../Classes/TargetTouchScene.h; sourceTree = "<group>"; };
 		12B1E60218A2A4A2000C3FAF /* killer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = killer.png; sourceTree = "<group>"; };
+		12E4872C191BDF600094640A /* Ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Ball.cpp; path = ../Classes/Ball.cpp; sourceTree = "<group>"; };
+		12E4872D191BDF600094640A /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ball.h; path = ../Classes/Ball.h; sourceTree = "<group>"; };
+		12E4872F191BDF790094640A /* ababall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ababall.png; sourceTree = "<group>"; };
 		15A3D87E1682F7B3002FB0C5 /* cocos2dx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2dx.xcodeproj; path = ../../../cocos2dx/proj.ios/cocos2dx.xcodeproj; sourceTree = "<group>"; };
 		15A3D8891682F7D5002FB0C5 /* Box2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2D.h; sourceTree = "<group>"; };
 		15A3D88B1682F7D5002FB0C5 /* b2BroadPhase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2BroadPhase.cpp; sourceTree = "<group>"; };
@@ -1256,6 +1261,8 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				12E4872C191BDF600094640A /* Ball.cpp */,
+				12E4872D191BDF600094640A /* Ball.h */,
 				12B1E5FC18A2A499000C3FAF /* KillingLight.cpp */,
 				12B1E5FD18A2A499000C3FAF /* KillingLight.h */,
 				12B1E5FE18A2A499000C3FAF /* TargetTouchScene.cpp */,
@@ -1718,6 +1725,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				12E4872F191BDF790094640A /* ababall.png */,
 				12B1E60218A2A4A2000C3FAF /* killer.png */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
@@ -1808,6 +1816,7 @@
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
+				12E48730191BDF790094640A /* ababall.png in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
@@ -1853,6 +1862,7 @@
 				15A3D9161682F7D5002FB0C5 /* b2WorldCallbacks.cpp in Sources */,
 				15A3D9171682F7D5002FB0C5 /* b2ChainAndCircleContact.cpp in Sources */,
 				15A3D9181682F7D5002FB0C5 /* b2ChainAndPolygonContact.cpp in Sources */,
+				12E4872E191BDF600094640A /* Ball.cpp in Sources */,
 				375BD5111868454E0024609E /* CCActionManager.cpp in Sources */,
 				15A3D9191682F7D5002FB0C5 /* b2CircleContact.cpp in Sources */,
 				15A3D91A1682F7D5002FB0C5 /* b2Contact.cpp in Sources */,
