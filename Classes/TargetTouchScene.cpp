@@ -37,6 +37,21 @@ bool TargetTouchScene::init()
     {
         return false;
     }
+
+	//////////////////////////////
+    // 2. add title label
+	CCSize size = CCDirector::sharedDirector()->getWinSize();
+
+	std::string title = "精灵测试";
+	CCLabelTTF *pLabel = CCLabelTTF::create(title.c_str(),"Thonburi",30);
+
+	pLabel->setPosition(ccp(size.width/2,size.height*0.9f));
+
+	this->addChild(pLabel,1);
+
+
+	//////////////////////////////
+    // 3. add sprite item
     KillingLight* sprite = KillingLight::create("killer.png");
 	
     this->addChild(sprite, 0);
