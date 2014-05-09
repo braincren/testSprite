@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12901ECC191D2F9500080AE6 /* Coins.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12901EC9191D2F9500080AE6 /* Coins.plist */; };
+		12901ECD191D2F9500080AE6 /* Coins.png in Resources */ = {isa = PBXBuildFile; fileRef = 12901ECA191D2F9500080AE6 /* Coins.png */; };
+		12901ED2191D332E00080AE6 /* ccb in Resources */ = {isa = PBXBuildFile; fileRef = 12901ED1191D332E00080AE6 /* ccb */; };
 		12B1E60018A2A499000C3FAF /* KillingLight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12B1E5FC18A2A499000C3FAF /* KillingLight.cpp */; };
 		12B1E60118A2A499000C3FAF /* TargetTouchScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12B1E5FE18A2A499000C3FAF /* TargetTouchScene.cpp */; };
 		12B1E60318A2A4A2000C3FAF /* killer.png in Resources */ = {isa = PBXBuildFile; fileRef = 12B1E60218A2A4A2000C3FAF /* killer.png */; };
@@ -265,6 +268,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12901EC9191D2F9500080AE6 /* Coins.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Coins.plist; sourceTree = "<group>"; };
+		12901ECA191D2F9500080AE6 /* Coins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Coins.png; sourceTree = "<group>"; };
+		12901ED1191D332E00080AE6 /* ccb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ccb; sourceTree = "<group>"; };
 		12B1E5FC18A2A499000C3FAF /* KillingLight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KillingLight.cpp; path = ../Classes/KillingLight.cpp; sourceTree = "<group>"; };
 		12B1E5FD18A2A499000C3FAF /* KillingLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KillingLight.h; path = ../Classes/KillingLight.h; sourceTree = "<group>"; };
 		12B1E5FE18A2A499000C3FAF /* TargetTouchScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TargetTouchScene.cpp; path = ../Classes/TargetTouchScene.cpp; sourceTree = "<group>"; };
@@ -1725,6 +1731,9 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				12901ED1191D332E00080AE6 /* ccb */,
+				12901EC9191D2F9500080AE6 /* Coins.plist */,
+				12901ECA191D2F9500080AE6 /* Coins.png */,
 				12E4872F191BDF790094640A /* ababall.png */,
 				12B1E60218A2A4A2000C3FAF /* killer.png */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
@@ -1814,16 +1823,19 @@
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
+				12901ED2191D332E00080AE6 /* ccb in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
 				12E48730191BDF790094640A /* ababall.png in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
+				12901ECC191D2F9500080AE6 /* Coins.plist in Resources */,
 				12B1E60318A2A4A2000C3FAF /* killer.png in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
+				12901ECD191D2F9500080AE6 /* Coins.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

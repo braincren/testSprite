@@ -10,6 +10,9 @@
 #include "KillingLight.h"
 #include "Ball.h"
 
+#include "cocos-ext.h"
+using namespace cocos2d::extension;
+
 using namespace cocos2d;
 using namespace CocosDenshion;
 
@@ -59,7 +62,7 @@ bool TargetTouchScene::init()
 
 	sprite->setPosition(ccp(240, 160));
 	
-	//1.生成动画数据  
+	//生成动画数据
 	CCTexture2D* cache = CCTextureCache::sharedTextureCache()->addImage("killer.png");
 	CCArray *arry=new CCArray();
 
@@ -82,7 +85,7 @@ bool TargetTouchScene::init()
 	sprite->runAction(repeat);
 	
 	//////////////////////////////
-    // 3. add ball item
+    // 4. add ball item
 	
 	int ballIndex=0;
 	for(int i=0;i<BALL_COUNT;i++)
@@ -105,6 +108,26 @@ bool TargetTouchScene::init()
 	CCSize vSize = CCDirector::sharedDirector()->getVisibleSize();
 	ball->setPosition(ccp((vSize.width-vPosition.x)/2, (vSize.height-vPosition.y)/2));	
 */
+    //////////////////////////////
+    // 5. add sprite from ccbi file
+    //----------------CocosBuilder 动画----------------
+    /* 创建一个自动释放的 Node 加载库 */
+    CCNodeLoaderLibrary * ccNodeLoaderLibrary = CCNodeLoaderLibrary::newDefaultCCNodeLoaderLibrary();
+    
+    /* 创建一个 CCBReader，并设置自动释放 */
+    cocos2d::extension::CCBReader * ccbReader = new cocos2d::extension::CCBReader(ccNodeLoaderLibrary);
+    ccbReader->autorelease();
+    
+    /*读取一个ccbi的文件,生成一个CCNode实例*/
+    CCNode *animationsTest = ccbReader->readNodeGraphFromFile("ccb/Coins.ccbi", this);
+    //设置坐标
+    animationsTest->setPosition(ccp(CCDirector::sharedDirector()->getWinSize().width*0.1,300));
+    if(animationsTest != NULL) {
+        this->addChild(animationsTest);
+    }
+    //播放一个动作:根据动作名称进行播放
+    ccbReader->getAnimationManager()->runAnimationsForSequenceNamed("turnLeft");
+     
 	return true;
 }
 
