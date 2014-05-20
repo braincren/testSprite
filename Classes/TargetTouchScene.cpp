@@ -53,6 +53,12 @@ bool TargetTouchScene::init()
 
 	this->addChild(pLabel,1);
 
+	//// add backgound image
+	CCSprite *bk = CCSprite::create("bk.jpg");
+	
+    this->addChild(bk, -1);
+
+	bk->setPosition(ccp(size.width/2, size.height/2));
 
 	//////////////////////////////
     // 3. add sprite item
